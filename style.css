@@ -1,0 +1,30 @@
+/* Style des emplacements de couleur (cercles) */
+.color-select {
+  width: 60px;
+  height: 40px;
+  border-radius: 50px; /* Un rayon de 50% de la largeur/hauteur rendra le cercle */
+  border: 2px solid #333;
+}
+
+/* Style pour la sélection de couleur */
+.color-picker {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Style pour chaque couleur de la combinaison secrète */
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}

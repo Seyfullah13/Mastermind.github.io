@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mastermind</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      /* Style des emplacements de couleur (cercles) */
+      .color-selector {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%; /* Rendre les cercles */
+        border: 2px solid #333;
+        margin-bottom: 10px;
+      }
+
+      /* Style pour chaque couleur de la combinaison secrète */
+      .color-blue {
+        background-color: blue;
+      }
+      .color-red {
+        background-color: red;
+      }
+      .color-green {
+        background-color: green;
+      }
+      .color-yellow {
+        background-color: yellow;
+      }
+
+      /* Style pour le feedback */
+      .feedback {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5 mb-4 text-center">Mastermind</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="row justify-content-between mb-4">
+            <div class="col-3">
+              <select
+                class="form-control color-selector color-blue"
+                id="input1"
+              >
+                <option value="blue">Bleu</option>
+                <option value="red">Rouge</option>
+                <option value="green">Vert</option>
+                <option value="yellow">Jaune</option>
+              </select>
+            </div>
+            <div class="col-3">
+              <select class="form-control color-selector color-red" id="input2">
+                <option value="blue">Bleu</option>
+                <option value="red">Rouge</option>
+                <option value="green">Vert</option>
+                <option value="yellow">Jaune</option>
+              </select>
+            </div>
+            <div class="col-3">
+              <select
+                class="form-control color-selector color-green"
+                id="input3"
+              >
+                <option value="blue">Bleu</option>
+                <option value="red">Rouge</option>
+                <option value="green">Vert</option>
+                <option value="yellow">Jaune</option>
+              </select>
+            </div>
+            <div class="col-3">
+              <select
+                class="form-control color-selector color-yellow"
+                id="input4"
+              >
+                <option value="blue">Bleu</option>
+                <option value="red">Rouge</option>
+                <option value="green">Vert</option>
+                <option value="yellow">Jaune</option>
+              </select>
+            </div>
+          </div>
+          <button id="submit-btn" class="btn btn-primary btn-block">
+            Valider
+          </button>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div id="feedback" class="text-center feedback"></div>
+          <div id="attempt-counter"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
